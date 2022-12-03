@@ -35,7 +35,6 @@ section h3::before {
     width: 15px;
     height: 15px;
     background-color: red;
-    display: inline-block;
     border-radius: 50%;
     position: absolute;
     top: 10px;
@@ -120,19 +119,16 @@ div.skill {
 }
 
 .skills-primary, .skills-secondary {
-    position: relative;
     padding-top: 15px;
 }
 
-.skills-primary::after {
-    position: absolute;
+.skills-primary::before {
     content: "Main";
     top: 0;
     left: 0;
 
 }
-.skills-secondary::after {
-    position: absolute;
+.skills-secondary::before {
     content: "Other";
     top: 0;
     left: 0;
@@ -149,37 +145,24 @@ div.skill {
 }
 
 .experience-institution {
-    position: relative;
-    padding-left: 20px;
     font-weight: 400;
 }
 
-.experience-institution::after {
-    content: "@";
-    position: absolute;
-    left: 0;
+.experience-institution::before {
+    content: " @ " ;
 }
 
-.experience-location {
-    position: relative;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.experience-location::after {
-    content: "In";
-    position: absolute;
-    left: 0;
-}
 
 .experience-location::before {
+    content: "In";
+}
+
+.experience-location::after{
     content: "On";
-    position: absolute;
-    right: 0;
 }
 
 .experience-date {
-    padding-left: 5px
+    padding-left: 5px;
 }
 
 .experience-details {
