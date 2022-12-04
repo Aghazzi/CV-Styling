@@ -3,9 +3,11 @@ header {
     padding-left: 10%;
 }
 
+
 header div {
     display: flex;
 }
+
 
 hgroup {
     color: red;
@@ -209,5 +211,13 @@ div.skill {
 
     .contacts {
         background-color: transparent;
+    }
+
+    header div {
+        flex-direction: column;
+    }
+
+    header figure {
+        margin-left: 0;
     }
 }

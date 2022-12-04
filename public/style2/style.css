@@ -1,0 +1,33 @@
+body {
+    padding: 50px 10%;
+}
+
+#about h3, hgroup h2, #contact h3, dt, .contact-skype {
+    display: none;
+}
+
+dd a {
+    color: transparent;
+}
+
+hgroup h1 {
+    border-bottom: 1px solid lightgray;
+    padding: 20px 0;
+}
+
+#about {
+    width: 70%;
+    opacity: 0.5;
+    font-style: italic;
+    display: block;
+    padding-bottom: 100px;
+}
+
+figure img {
+    position: absolute;
+    top: 90px;
+    right: 250px;
+    width: 150px;
+    transform: rotate(-15deg);
+}
+
