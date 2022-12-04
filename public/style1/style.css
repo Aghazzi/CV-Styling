@@ -184,10 +184,7 @@ div.skill {
         position: inherit;
         width: auto;
     }
-    header div {
-        display: block;
-    }
-
+    
     .contacts dl {
         color: black;
     }
