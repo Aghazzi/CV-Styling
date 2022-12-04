@@ -2,17 +2,13 @@ body {
     padding: 50px 10%;
 }
 
-#about h3, hgroup h2, #contact h3, dt, .contact-skype {
+#about h3, hgroup h2, #contact h3, dt, .experience-institution {
     display: none;
-}
-
-dd a {
-    color: transparent;
 }
 
 hgroup h1 {
     border-bottom: 1px solid lightgray;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 #about {
@@ -20,14 +16,217 @@ hgroup h1 {
     opacity: 0.5;
     font-style: italic;
     display: block;
-    padding-bottom: 100px;
+    padding-bottom: 80px;
+    margin: 0;
 }
 
 figure img {
     position: absolute;
     top: 90px;
-    right: 250px;
+    right: 15%;
     width: 150px;
     transform: rotate(-15deg);
 }
 
+section {
+    display: grid;
+    grid-template-columns: 130px auto;
+    grid-template-rows: auto auto;
+    grid-gap: 10px;
+    margin: 30px 0;
+}
+
+section h3 {
+    grid-row: 1/3;
+    border-right: 1px solid lightgrey;
+    margin: 0;
+    padding: 10px 0;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.skills {
+    display: flex;
+}
+
+.skill {
+    margin: 2px;
+    background-color: darkcyan;
+    color: white;
+    padding: 5px;
+    width: 130px;
+}
+
+.skill[data-skill="5"]::after {
+    content: "★★★";
+    float: right;
+}
+
+.skill[data-skill="6"]::after {
+    content: "★★★";
+    float: right;
+}
+
+.skill[data-skill="3"]::after {
+    content: "★★";
+    float: right;
+}
+
+.skill[data-skill="1"]::after {
+    content: "★";
+    float: right;
+}
+
+.skill[data-skill="9"]::after {
+    content: "★★★★★";
+    float: right;
+}
+
+.skill[data-skill="7"]::after {
+    content: "★★★★";
+    float: right;
+}
+
+.skills-primary .skill {
+    font-size: large;
+}
+
+.skills-secondary .skill {
+    font-size: small;
+}
+
+.experience {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+}
+
+.experience-description {
+    grid-column: 1/3;
+    text-align: justify;
+}
+
+.experience-details {
+    text-align: right;
+    opacity: 0.5;
+    padding: 20px 0;
+}
+
+.experience-type {
+    color: darkcyan;
+}
+
+.experience-date-separator {
+    color: darkcyan;
+}
+
+dd {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
+}
+
+dd a {
+    color: transparent;
+    width: 100%;
+    height: 100%;
+}
+
+.contact-skype {
+    display: none;
+}
+
+.contact-email {
+    background-image: url(/public/images/email.png);
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+}
+
+.contact-phone {
+    background-image: url(/public/images/phone.png);
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+}
+
+.contact-github {
+    background-image: url(/public/images/github.png);
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.contact-facebook {
+    background-image: url(/public/images/facebook.png);
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.contacts {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin: auto 500px auto 100px;
+}
+
+#contact {
+    display: block;
+}
+
+@media screen and (max-width: 992px) {
+    figure img {
+        display: none;
+    }
+
+    section {
+        display: block;
+    }
+
+    section h3 {
+        border: 0px;
+    }
+
+    section h3::after {
+        content: "";
+        width: 100px;
+        height: 2px;
+        background-color: black;
+        display: block;
+    }
+
+    #about {
+        width: 100%;
+    }
+
+    .contacts {
+        display: flex;
+        /* flex-wrap: wrap; */
+        align-items: flex-end;
+        margin: 0;
+    }
+
+    #contact {
+        display: block;
+    }
+
+    .skills {
+        display: flex;
+    }
+    
+    .skill {
+        /* margin: 2px; */
+        /* background-color: darkcyan; */
+        /* color: white; */
+        /* padding: auto; */
+        width:max-content;
+    }
+}
