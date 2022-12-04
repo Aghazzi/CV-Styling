@@ -32,7 +32,7 @@ section {
     display: grid;
     grid-template-columns: 130px auto;
     grid-template-rows: auto auto;
-    grid-gap: 10px;
+    grid-gap: 5px;
     margin: 30px 0;
 }
 
@@ -88,11 +88,11 @@ section h3 {
 }
 
 .skills-primary .skill {
-    font-size: large;
+    font-size: 18px;
 }
 
 .skills-secondary .skill {
-    font-size: small;
+    font-size: 12px;
 }
 
 .experience {
@@ -209,8 +209,7 @@ dd a {
 
     .contacts {
         display: flex;
-        /* flex-wrap: wrap; */
-        align-items: flex-end;
+        justify-content: left;
         margin: 0;
     }
 
@@ -218,15 +217,11 @@ dd a {
         display: block;
     }
 
-    .skills {
-        display: flex;
+    .skills-primary .skill {
+        font-size: 15px;
     }
     
-    .skill {
-        /* margin: 2px; */
-        /* background-color: darkcyan; */
-        /* color: white; */
-        /* padding: auto; */
-        width:max-content;
+    .skills-secondary .skill {
+        font-size: 10px;
     }
 }
