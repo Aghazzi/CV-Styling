@@ -17,18 +17,24 @@ hgroup {
 .content {
     display: flex;
     flex-wrap: wrap;
-    padding: 5%;
+    padding: 4%;
     margin: 20px;
+}
+
+p {
+    padding-left: 0;
+    padding-right: 15px;
 }
 
 section {
     flex: 50%;
-    position: relative; 
+    position: relative;
 }
 
 section h3 {
     border-bottom: 1px solid grey;
     padding-bottom: 5px;
+    padding-left: 15px;
     margin: 10px 0 30px;
 }
 
@@ -40,7 +46,7 @@ section h3::before {
     border-radius: 50%;
     position: absolute;
     top: 10px;
-    left: -20px;
+    left: -2px;
 }
 
 dd {
@@ -65,9 +71,10 @@ dd {
 
 #contact {
     position: absolute;
-    top: 4%;
+    top: 3%;
     left: 50%;
     width: 50%;
+
 }
 
 #contact h3 {
@@ -121,7 +128,8 @@ div.skill {
 }
 
 .skills-primary, .skills-secondary {
-    padding-top: 15px;
+    padding-top: 10px;
+    /* margin: 15px 0 0 15px; */
 }
 
 .skills-primary::before {
@@ -201,12 +209,12 @@ div.skill {
     }
 
     #contact h3::before {
-        left: -20px;
+        left: -5px;
     }
 
     section h3::before {
         top: -2px;
-        left: -18px;
+        left: -5px;
     }
 
     .contacts {
